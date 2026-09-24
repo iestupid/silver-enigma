@@ -1,0 +1,89 @@
+/* Estilos globales */
+* {
+    text-align: center;
+    box-sizing: border-box; /* Evita que el padding rompa el ancho en celulares */
+}
+
+/* Encabezado adaptable */
+.header {
+    background-image: url('img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px; 
+    width: 100%;
+    margin: 0;
+}
+
+/* Tipografías base */
+h1 {
+    color: white;
+    text-align: center;
+    padding-top: 150px; 
+    font-size: 50px; 
+}
+h2 {
+    color: black;
+    text-align: center;
+    padding-top: 20px; 
+    margin-bottom: 1px; 
+    font-size: 30px; 
+}
+h3 {
+    color: black;
+    text-align: center;
+    padding-top: 20px; 
+    margin-bottom: 1px; 
+    font-size: 24px; 
+}
+
+/* Botones */
+button {
+    color: white;
+    background-color: black;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Secciones */
+section {
+    color: black;
+    text-align: center;
+    padding: 30px 15px; 
+    font-size: 20px; 
+}
+
+/* ----------------------------------------------------
+   ADAPTACIÓN PARA CELULARES (Pantallas menores a 768px)
+------------------------------------------------------- */
+@media (max-width: 768px) {
+    .header {
+        height: auto; /* Permite que el alto se adapte al contenido en pantallas chicas */
+        padding-bottom: 40px;
+    }
+    h1 {
+        font-size: 32px; /* Letra más chica para que no se corte en el teléfono */
+        padding-top: 80px;
+    }
+    h2 {
+        font-size: 22px;
+        padding-top: 15px;
+    }
+    h3 {
+        font-size: 18px;
+        padding-top: 15px;
+    }
+    section {
+        font-size: 16px; /* Texto de párrafo más legible en móviles */
+        padding: 20px 10px;
+    }
+    nav ul {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 10px; /* Separa los botones en pantallas móviles */
+    }
+}
